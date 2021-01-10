@@ -1,36 +1,56 @@
+<!DOCTYPE html>
 <html>
-	<head></head>
-	<body style= "background-color: beige">
-		<div  style = "background-color: black; height: 12%"   > 
-			<table>
-				<tr>
-					<td style="width: 37%">
-						<div style= "color: white">
-							<div>Size of array : <progress id ="file" value="32" max="100" > 32%</progress></div> 
-							<div>Speed of array : <progress id ="file" value="32" max="100" > 32%</progress> </div>
-							<div>Generate new array! </div>
-						</div>
-					</td>
-					<td><h1 style= "color: white">SORTING VIZUALIZER</h1></div></td>
-					<td style="width: 37%"></td>
-				</tr>
-			</table>	
-		</div>	
-		<table>
-			<tr colspan = "6">
-				<td style="width: 27%" >
-					<div style="border" >
-						<button> BUBBLE SORT </button>
-						<button> INSERTION SORT </button>
-						<button> MERGE SORT </button>
-						<button> QUICK SORT </button>
-						<button> SELECTION SORT </button>
-						<button> HEAP SORT </button>
-					</div>
-				</td>
-				<td>Place for random arrays</td>
-				<td>just third container</td>
-			</tr>
-		</table>
-	</body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .vertical-menu {
+            width: 200px;
+        }
+
+        .vertical-menu a {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+
+        .vertical-menu a.active {
+            background-color: burlywood;
+            color: white;
+        }
+
+        .main {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body class="main">
+
+    <h1>Sorting visualizer</h1>
+    <div>
+        <form>
+            <div class="form-group">
+                <label for="size">Enter the size of array:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+        </form>
+    </div>
+    <div class="vertical-menu">
+        <a href="#" class="active">Bubble sort</a>
+        <a href="#">Insertion sort</a>
+        <a href="#">Merge sort</a>
+        <a href="#">QUICK</a>
+        <a href="#">HEAP</a>
+    </div>
+
+
+</body>
+
 </html>
